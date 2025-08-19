@@ -3,12 +3,17 @@ package com.example.filesharingapp.service;
 import java.io.IOException;
 import java.util.List;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.filesharingapp.entity.entity;
+import com.example.filesharingapp.repository.repository;
 
-public class serviceimpl implements sevice {
+public class serviceimpl implements service {
+    private  repository fileRepository;
+    private ModelMapper modelmapper;
+
 
     // Implement the methods defined in the sevice interface
     @Override
