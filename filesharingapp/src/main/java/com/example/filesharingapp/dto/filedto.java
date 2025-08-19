@@ -9,10 +9,10 @@ import lombok.Data;
 public class filedto {
     private int id;
 
-    private String name;
-    private String description;
-    private String filePath;
-    private LocalDateTime createdAt;
+    private String fileName;
+    private String uploadedBy;
+    private LocalDateTime uploadTime;
+    private LocalDateTime expiryTime;
     
 
     private byte[] fileData;

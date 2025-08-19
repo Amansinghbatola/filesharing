@@ -17,10 +17,10 @@ public class entity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String name;
-    private String description;
-    private String filePath;
-    private LocalDateTime createdAt;
+    private String fileName;
+    private String uploadedBy;
+    private LocalDateTime uploadTime;
+    private LocalDateTime expiryTime;
     
 
     @Lob
