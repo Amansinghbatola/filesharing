@@ -1,7 +1,7 @@
 package com.example.filesharingapp.service;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
+
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
@@ -16,6 +16,5 @@ public interface sevice {
     public List<entity> getAllFiles();
     public ResponseEntity<?> deletefile(int id);
     public ResponseEntity<?> sharfile(int id);
-      void deleteFile(int id);
 
 }
