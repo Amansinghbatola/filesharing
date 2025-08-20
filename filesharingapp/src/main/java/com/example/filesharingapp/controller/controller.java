@@ -74,15 +74,4 @@ public class controller {
 
 
 
-    @PostMapping("/delete/{id}")
-    public String deleteFile(@PathVariable int id) {
-        ResponseEntity<?> file = fileService.deleteFile(id);
-        if(file.hasBody()){
-            return "redirect:/files/home";
-        }
-        else{
-            return "redirect:/files";
-        }
-       
-    }
 }
